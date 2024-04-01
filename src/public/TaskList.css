@@ -1,0 +1,47 @@
+.TaskList {
+  margin: 2rem auto;
+  width: 60%;
+}
+
+@media only screen and (max-width: 1050px) {
+  .TaskList {
+    width: 100%;
+  }
+}
+
+.TaskList ul li {
+  /* padding: 1rem; */
+  list-style: none;
+  margin: 1rem 0;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .buttons {
+    display: grid;
+  }
+}
+
+.Delete {
+  background-color: #ff1361 !important;
+  border: none;
+}
+
+.form-check-input {
+  margin-right: 1rem;
+}
+
+.empty {
+  text-align: center;
+  margin-bottom: 2rem;
+}
