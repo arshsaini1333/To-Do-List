@@ -12,9 +12,11 @@ export default function TaskInput({ setTasks, tasks }) {
   //Handle Submit button to add task
   const handleSubmit = (event) => {
     event.preventDefault();
-    setTasks((prevToDos) => {
-      return [...prevToDos, { task: task, id: uuidv4(), isDone: false }];
-    });
+    if (task.length > 0) {
+      setTasks((prevToDos) => {
+        return [...prevToDos, { task: task, id: uuidv4(), isDone: false }];
+      });
+    }
     setTask("");
   };
   return (
