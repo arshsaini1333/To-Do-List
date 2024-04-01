@@ -5,3 +5,10 @@
   width: 80%;
   margin: 2rem auto;
 }
+
+@media only screen and (max-width: 500px) {
+  .TodoList {
+    width: 90%;
+    padding: 1rem 0.5rem;
+  }
+}
