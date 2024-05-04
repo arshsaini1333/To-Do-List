@@ -9,7 +9,7 @@ export default function TaskInput({ setTasks, tasks }) {
     setTask(event.target.value);
   };
 
-  //Handle Submit button to add task
+  //Handle Submit button to add tasks
   const handleSubmit = (event) => {
     event.preventDefault();
     if (task.length > 0) {
